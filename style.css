@@ -1,0 +1,17 @@
+.card{
+    height: 400px;
+    max-width: 300PX;
+}
+
+body{
+    height: 100%;
+    background-color: green;
+}
+
+#number{
+    font-size: 80px;
+}
+
+.palo{
+    font-size: 60px;
+}
