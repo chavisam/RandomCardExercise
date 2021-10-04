@@ -11,35 +11,59 @@
 <title>random card</title>
 </head>
 <body>
-<div class="container-fluid"> 
-  <div class="row justify-content-center mt-5">
-     <div class="col-5">
-         
-    <div class="d-row card bg-light">
-        <div class="row">
-            <div class="col suit m-2 "></div>
-        </div>
-    
-    
-        <div class="row">
-            <div class="col text-center" id="number"></div>
-        </div>
-    
-    
-        <div class="row align-items-end">
-            <div class="col suit m-4 text-right"></div>
-        </div>
-      </div>
-     </div>
+<div class="container-fluid "> 
+  <div class="row justify-content-center mt-2">
+    <div class="form-group col-6">
+      <label for="width">Width: </label>
+      <input type="text" class="form-control" id="width" placeholder="Enter the Card With">
+      <label for="width">Height: </label>
+      <input type="text" class="form-control" id="height" placeholder="Enter the Card Height">
+
+    </div>
   </div>
+
+
+
+    
+        <div class="d-flex flex-column  col-4  mt-5 mx-auto card" id="card">
+            <div class="p-2  suit p-3"></div>
+            <div class="p-2  text-center p-3" id="number"></div>
+            <div class="p-2  suit text-right p-3"></div>
+          </div>
+   
+
+
    
   <div class="row justify-content-center">
-    <button id="push_button" class="btn btn-primary p-2 text-center mt-3">Card Spinner</button>
+    <button id="push_button" onclick="newCard()" class="btn btn-primary p-2 text-center mt-3">Card Spinner</button>
+    <button id="seconds" onclick="seconds()" class="btn btn-secondary p-2 text-center mt-3 ml-2">3 Seconds Timer</button>
   </div>
+
 </div>
+
 <script src="./app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+         <!-- Aquí empieza la carta -->
+        <!-- <div class="d-flex flex-colum card " id="card">
+
+            <div class=" bg-danger">
+                <div class="col-6 suit m-2 "></div>
+            </div>
+        
+        
+            <div class=" bg-secondary justify-content-center">
+                <div class="col-6 text-center" id="number"></div>
+            </div>
+        
+        
+            <div class=" bg-warning ">
+                <div class="col-6 suit mr-2 text-right "></div>
+            </div>
+
+        </div> -->
