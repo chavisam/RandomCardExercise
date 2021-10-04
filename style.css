@@ -1,6 +1,6 @@
 .card{
-    height: 400px;
-    max-width: 300PX;
+    height: 300px;
+  width: 250px;
 }
 
 body{
@@ -9,9 +9,9 @@ body{
 }
 
 #number{
-    font-size: 80px;
+    font-size:300%
 }
 
 .suit{
-    font-size: 60px;
+    font-size: 300%
 }
