@@ -7,24 +7,24 @@
     //     if(number==11){number = 'Q'}
     //     if(number==10){number = 'J'}
 
-    //     let paloDiv = document.querySelectorAll('.palo');
-    //     let randomPalo = Math.floor(Math.random() * 4 - 1) +1
+    //     let suitDiv = document.querySelectorAll('.suit');
+    //     let randomsuit = Math.floor(Math.random() * 4 - 1) +1
         
-    //     if(randomPalo == 1){
-    //         var palo = "<p style ='color:red'>♦</p>"
-    //     }else if(randomPalo == 2){
-    //         var palo = "<p style ='color:red'>♥</p>"
-    //     }else if(randomPalo == 3){
-    //         var palo = "<p style ='color:black'>♠</p>"
+    //     if(randomsuit == 1){
+    //         var suit = "<p style ='color:red'>♦</p>"
+    //     }else if(randomsuit == 2){
+    //         var suit = "<p style ='color:red'>♥</p>"
+    //     }else if(randomsuit == 3){
+    //         var suit = "<p style ='color:black'>♠</p>"
     //     }else{
-    //         var palo = "<p style ='color:black'>♣</p>"
+    //         var suit = "<p style ='color:black'>♣</p>"
     //     }
 
     
 
     //     numberDiv.innerHTML = number;
-    //     paloDiv[0].innerHTML = palo
-    //     paloDiv[1].innerHTML = palo
+    //     suitDiv[0].innerHTML = suit
+    //     suitDiv[1].innerHTML = suit
         
     // };
 
@@ -47,25 +47,25 @@ button.addEventListener('click', function(){
     else numberDiv.innerHTML = numbers[number]
 
 
-//now we program random palos
-    let palos = ['♦','♥','♠','♣']
-    let randomPalo = Math.floor(Math.random() * (3-0+1));
-    let palosDiv= document.querySelectorAll('.palo');
+//now we program random suits
+    let suits = ['♦','♥','♠','♣']
+    let randomsuit = Math.floor(Math.random() * (3-0+1));
+    let suitsDiv= document.querySelectorAll('.suit');
 
        
      
-        if(randomPalo == 1){
-            var palo = "<p style ='color:red'>" + palos[randomPalo] + "</p>"
-        }else if(randomPalo == 2){
-            var palo = "<p style ='color:red'>" + palos[randomPalo] + "</p>"
-        }else if(randomPalo == 3){
-            var palo = "<p style ='color:black'>" + palos[randomPalo] + "</p>"
+        if(randomsuit == 1){
+            var suit = "<p style ='color:red'>" + suits[randomsuit] + "</p>"
+        }else if(randomsuit == 2){
+            var suit = "<p style ='color:red'>" + suits[randomsuit] + "</p>"
+        }else if(randomsuit == 3){
+            var suit = "<p style ='color:black'>" + suits[randomsuit] + "</p>"
         }else{
-            var palo = "<p style ='color:black'>" + palos[randomPalo] + "</p>"
+            var suit = "<p style ='color:black'>" + suits[randomsuit] + "</p>"
         }
 
-        palosDiv[0].innerHTML = palo;
-        palosDiv[1].innerHTML = palo;
+        suitsDiv[0].innerHTML = suit;
+        suitsDiv[1].innerHTML = suit;
         console.log(number)
 })
 
